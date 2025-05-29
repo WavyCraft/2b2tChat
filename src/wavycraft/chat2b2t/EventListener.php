@@ -13,14 +13,12 @@ use pocketmine\utils\TextFormat as TextColor;
 
 class EventListener implements Listener {
 
-    public function chat(PlayerChatEvent $event) : void{
+    public function chat(PlayerChatEvent $event) : void {
         $sender = $event->getPlayer();
         $originalMessage = $event->getMessage();
-        $format = $event->getFormat();
 
         if (str_starts_with($originalMessage, ">")) {
-            $greenMessage = TextColor::GREEN . $originalMessage;
-            $event->setMessage($greenMessage);
+            $event->setMessage(TextColor::GREEN . $originalMessage);
             return;
         }
 
@@ -44,7 +42,7 @@ class EventListener implements Listener {
                 }
             }
 
-            $formatted = str_replace(["%s", "%s"], [$sender->getName(), $customMessage], $format);
+            $formatted = $sender->getName() . ": " . $customMessage;
             $receiver->sendMessage($formatted);
         }
     }
