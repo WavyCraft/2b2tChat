@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace wavycraft\2b2tchat;
+namespace wavycraft\chat2b2t;
 
 use pocketmine\plugin\PluginBase;
 
