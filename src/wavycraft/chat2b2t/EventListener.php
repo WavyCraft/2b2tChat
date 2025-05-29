@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace wavycraft\2b2tchat;
+namespace wavycraft\chat2b2t;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
