@@ -13,7 +13,7 @@ use pocketmine\utils\TextFormat as TextColor;
 
 class EventListener implements Listener {
 
-    public function chat(PlayerChatEvent $event) : void {
+    public function chat(PlayerChatEvent $event) : void{
         $sender = $event->getPlayer();
         $originalMessage = $event->getMessage();
 
