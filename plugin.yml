@@ -1,5 +1,5 @@
-name: 2b2tChat
+name: Chat2b2t
 version: 1.0.0
 main: Terpz710
 api: 5.0.0
-main: wavycraft\2b2tchat\Loader
+main: wavycraft\chat2b2t\Loader
